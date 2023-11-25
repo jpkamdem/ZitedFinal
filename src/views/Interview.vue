@@ -56,7 +56,7 @@ div#sky-bg {
 }
 div[id="sky-bg"] img[alt="ZitedTxt"] {
   height: 19.4%;
-  margin-left: 5%;
+  margin: 1% 0 0 5%;
 }
 div video[autoplay] {
   width: 75%;

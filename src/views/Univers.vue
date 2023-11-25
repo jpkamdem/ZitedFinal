@@ -1,6 +1,8 @@
 <template>
   <Container />
-  <div id="sky-bg"></div>
+  <div id="sky-bg">
+    
+  </div>
 </template>
 
 <script>
