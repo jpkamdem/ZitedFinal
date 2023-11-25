@@ -4,13 +4,15 @@
     <div>
       <img src="./../assets/title.png" alt="ZitedTxt" />
       <div id="video-container">
-        <video autoplay @ended="showVideoList">
+        <video autoplay>
           <source src="./../assets/video.mp4" type="video/mp4" />
         </video>
         <ul v-if="showList">
-          <li class='btn-list'>Parcours</li>
-          <li class='btn-list'>Univers</li>
-          <li class='btn-list'>Musiques</li>
+          <router-link to='/parcours'>
+          <li class="btn-list">Parcours</li>
+          </router-link>
+          <li class="btn-list">Univers</li>
+          <li class="btn-list">Musiques</li>
         </ul>
       </div>
     </div>
@@ -25,14 +27,14 @@ export default {
   components: { Container },
   data() {
     return {
-      showList: false,
+      showList: true,
     };
   },
   methods: {
     showVideoList() {
-      this.showList = !this.showList
-    }
-  }
+      this.showList = !this.showList;
+    },
+  },
 };
 </script>
 
@@ -50,8 +52,7 @@ div[id="sky-bg"] img[alt="ZitedTxt"] {
   margin-left: 5%;
 }
 div video[autoplay] {
-  width: 65%;
-  height: 30%;
+  width: 75%;
   border-radius: 20px;
 }
 div#video-container {
@@ -61,14 +62,14 @@ div#video-container {
   justify-content: space-evenly;
   align-items: center;
 }
-li.btn-list{
+li.btn-list {
   margin: 20% 0 0 0;
-  font-size: 4em;
+  font-size: 3.5em;
   list-style-type: square;
 }
 li.btn-list:hover {
   color: #fbba16;
-  font-size: 4.1em;
-  transition: all .1s ease-in-out;
+  font-size: 3.6em;
+  transition: all 0.1s ease-in-out;
 }
 </style>
