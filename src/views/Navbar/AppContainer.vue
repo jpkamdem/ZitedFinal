@@ -2,9 +2,15 @@
   <div id="app-container">
     <div id="burger-menu"></div>
     <div id="icons-container">
-      <a :href="spotify" target="_blank"><img src="./../../assets/spotify.png" alt="ArtistLink" class="icon"/></a>
-      <a :href="ytb" target="_blank"><img src="./../../assets/youtube.png" alt="ArtistLink" class="icon"/></a>
-      <a :href="ig" target="_blank"><img src="./../../assets/instagram.png" alt="ArtistLink" class="icon"/></a>
+      <a :href="spotify" target="_blank"
+        ><img src="./../../assets/spotify.png" alt="ArtistLink" class="icon"
+      /></a>
+      <a :href="ytb" target="_blank"
+        ><img src="./../../assets/youtube.png" alt="ArtistLink" class="icon"
+      /></a>
+      <a :href="ig" target="_blank"
+        ><img src="./../../assets/instagram.png" alt="ArtistLink" class="icon"
+      /></a>
     </div>
   </div>
 </template>

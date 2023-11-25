@@ -1,13 +1,15 @@
 <template>
   <Container />
-  <div id="sky-bg"></div>
+  <div id="sky-bg">
+    
+  </div>
 </template>
 
 <script>
 import Container from "./Navbar/Container.vue";
 
 export default {
-  name: "Parcours",
+  name: "Musiques",
   components: { Container },
 };
 </script>

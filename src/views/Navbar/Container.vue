@@ -11,7 +11,7 @@ import AppContainer from "./AppContainer.vue";
 
 export default {
   name: "Container",
-  components: { HomeContainer, AppContainer }
+  components: { HomeContainer, AppContainer },
 };
 </script>
 

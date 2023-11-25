@@ -7,7 +7,7 @@
 import Container from "./Navbar/Container.vue";
 
 export default {
-  name: "Parcours",
+  name: "Univers",
   components: { Container },
 };
 </script>

@@ -8,11 +8,18 @@
           <source src="./../assets/video.mp4" type="video/mp4" />
         </video>
         <ul v-if="showList">
-          <router-link to='/parcours'>
-          <li class="btn-list">Parcours</li>
+          <router-link to="/parcours">
+            <li class="btn-list">Parcours</li>
           </router-link>
-          <li class="btn-list">Univers</li>
-          <li class="btn-list">Musiques</li>
+
+          <router-link to="/musiques">
+            <li class="btn-list">Musiques</li>
+          </router-link>
+
+          <router-link to="/univers">
+            <li class="btn-list
+            ">Univers</li>
+          </router-link>
         </ul>
       </div>
     </div>
