@@ -1,7 +1,9 @@
 <template>
+<router-link to='/'>
   <div id="home-container">
       <img src="./../../assets/home.png" alt="" class="icon">
   </div>
+</router-link>
 </template>
 
 <script>

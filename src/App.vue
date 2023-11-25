@@ -1,11 +1,10 @@
 <template>
- 
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
 div#app {
-    height: 100%;
-    display: flex;
-  }
+  height: 100%;
+  display: flex;
+}
 </style>
