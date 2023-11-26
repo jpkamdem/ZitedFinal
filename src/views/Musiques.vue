@@ -1,6 +1,12 @@
 <template>
   <Container />
   <div id="sky-bg">
+    <div>
+      <img src="./../assets/title.png" alt="ZitedMusic" />
+    </div>
+    <div class="ariane-line">
+      <span>Musiques</span>
+    </div>
     
   </div>
 </template>
@@ -21,6 +27,5 @@ div#sky-bg {
   width: 90%;
   border-radius: 20px;
   margin: 1.1% 10px 0 1%;
-  flex-flow: column wrap;
 }
 </style>

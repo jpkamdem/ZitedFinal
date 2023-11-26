@@ -4,7 +4,7 @@
     <div>
       <img src="./../assets/title.png" alt="ZitedTxt" />
       <div id="video-container">
-        <video autoplay>
+        <video autoplay @ended="showVideoList">
           <source src="./../assets/video.mp4" type="video/mp4" />
         </video>
         <ul v-if="showList">
@@ -76,7 +76,6 @@ li.btn-list {
 }
 li.btn-list:hover {
   color: #fbba16;
-  font-size: 3.6em;
   transition: all 0.1s ease-in-out;
 }
 </style>
