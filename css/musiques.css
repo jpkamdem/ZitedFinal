@@ -1,0 +1,7 @@
+section.main-content {
+    height: 95vh;
+    width: 90vw;
+    margin: 2.2vh 1vw 0 .2vw;
+    background: linear-gradient(#4297db, #949dad, #816888, #504f7c);
+    border-radius: 20px;
+}

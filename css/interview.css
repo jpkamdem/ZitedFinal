@@ -1,0 +1,30 @@
+section.main-content-itw {
+    height: 95vh;
+    width: 90vw;
+    margin: 2.2vh 1vw 0 .2vw;
+    background: linear-gradient(#4297db, #949dad, #816888, #504f7c);
+    border-radius: 20px;
+}
+img[alt='ZitedTxt'] {
+    padding: 5vh 0 7vh 8vw;
+}
+div#video-container {
+    display: flex;
+    justify-content: space-around;
+}
+div.ariane-list ul a {
+    text-decoration: none;
+    color: #fff;
+}
+div.ariane-list ul a li {
+    font-size: 5vh;
+    margin: 4vh 0 0 0;
+    list-style-type: square;
+}
+div.ariane-list ul a li:hover {
+    color: #fbba16;
+    transition: color .4s;
+}
+video {
+    border-radius: 20px;
+}

@@ -1,0 +1,47 @@
+section.main-content-path {
+    height: 95vh;
+    width: 90vw;
+    margin: 2.2vh 1vw 0 .2vw;
+    background: linear-gradient(#4297db, #949dad, #816888, #504f7c);
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+/* TEMPLATE ZITED + TITRE PAGE  */
+img[alt='tittreZited'] {
+    padding: 5vh 0 7vh 8vw;
+}
+div.page-title {
+    display: block;
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(#515151, #747474);
+    font-size: 2.5em;
+    padding: .2em;
+    border-radius: 20px;
+}
+div.page-title ~ hr {
+    margin: 3em;
+}
+/*  */
+#articles-box-size h1 {
+    font-size: 4em;
+}
+#articles-box-size h2 {
+    font-size: 2em;
+}
+#articles-box-size p {
+    font-size: 1.5em;
+    text-align: justify
+}
+article#articles-box-size {
+    padding: 0 15vw;
+    overflow-y: scroll;
+}
+div.article-layout {
+    display: flex;
+    align-items: center;
+}
+div.article-layout img {
+    height: 40vh;
+}

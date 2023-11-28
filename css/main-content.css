@@ -1,0 +1,41 @@
+section.main-content {
+    height: 95vh;
+    width: 90vw;
+    margin: 2.2vh 1vw 0 .2vw;
+    background: linear-gradient(#4297db, #949dad, #816888, #504f7c);
+    border-radius: 20px;
+}
+div.images-container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+img[alt='zited'] {
+    border-radius: 0 0 0 20px;
+    align-self: end;
+    min-height: 93vh;
+}
+
+img[alt='titleZit'] {
+    height: 35vh;
+    padding: 16vh 8vw 0 0;
+}
+section.main-content div.btn-start {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: relative;
+    display: block;
+    bottom: 28%;
+    left: 65%;
+    background: #fbba16;
+}
+section.main-content div.btn-start span {
+    font-size: 2.7em;
+    margin: 0 0 0 1.5em;
+}
+
+section.main-content a {
+    text-decoration: none;
+    color: #fff;
+}
