@@ -7,7 +7,7 @@
     <router-link to="/interview">
       <div id="start-btn">
         <div id="arrow"></div>
-        <span>Démarrer</span>
+        <span id="start">Démarrer</span>
       </div>
     </router-link>
   </section>
@@ -70,6 +70,9 @@ div#start-btn #arrow {
   border-top: 0.8em solid transparent;
   border-bottom: 0.8em solid transparent;
   border-left: 1em solid black;
+}
+span#start {
+  color: #fff;
 }
 </style>
 

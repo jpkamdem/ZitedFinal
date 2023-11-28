@@ -70,10 +70,15 @@ div#video-container {
   align-items: center;
 }
 li.btn-list {
+  color: #fff;
   margin: 20% 0 0 0;
   font-size: 3.5em;
   list-style-type: square;
 }
+ul a {
+  text-decoration: none;
+}
+
 li.btn-list:hover {
   color: #fbba16;
   transition: all 0.1s ease-in-out;
