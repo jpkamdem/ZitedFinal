@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/main-content.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma&display=swap" rel="stylesheet">
     <title>Accueil</title>
 </head>
 
@@ -16,19 +19,40 @@
     <div class="app">
         <nav>
             <div class="home-container">
+                <div class="position_maison" style="display: flex;
+                align-items: center;">
                 <a href="index.html">
-                    <img src="/assets/home.png" alt="" class="icon">
+                    <img src="/assets/home.png" alt="" class="icon" style="left:23px;">
                 </a>
+                <div class="text_1_contenant">
+                    <p>Accueil</p>
+                </div>
+            </div>
             </div>
 
             <div class="app-container">
                 <div class="burger">
-                    <label for="burger" class="burger">
+                    <label for="burger" class="burger" style="display: flex;
+                    align-items: center;">
+                    <div>
+                        <input type="checkbox" id="burger">
                         <span></span>
                         <span></span>
                         <span></span>
+                    </div>
+                    <div class="text_2_contenant">
+                        <p>Bibliothèque</p>
+                        <ol style="width: 226px;
+                        position: relative;
+                        left: -73px;">
+                            <li>Qui est Zited ?</li>
+                            <li>Bibliothèque d'article</li>
+                            <li>Zoom sur le contexte</li>
+                            <li>Ses Sons</li>
+                        </ol>
+                    </div>
                     </label>
-                </div>
+                </div>            
                 <div class="icons-container">
                     <a href="https://open.spotify.com/intl-fr/artist/1GvRoYvF2CUlTiViXRBDE1?si=XhElRf-7RsGS_slu792ZKg"
                         target="_blank">
@@ -38,28 +62,60 @@
                         <img src="assets/youtube.png" alt="ArtistsLink" class="icon">
                     </a>
                     <a href="https://www.instagram.com/zzited/" target="_blank">
-                        <img src="assets/spotify.png" alt="ArtistsLink" class="icon">
+                        <img src="assets/instagram.png" alt="ArtistsLink" class="icon">
                     </a>
                 </div>
             </div>
         </nav>
-
+        <div class="overlay"></div>
         <section class="main-content">
             <div class="images-container">
                 <img src="assets/photo.png" alt="zited">
-                <img src="assets/title.png" alt="titleZit">
+                <div style = "position: relative;top: -16em;">
+                    <div style = "display: flex;align-items: center;color:#f6b517;">
+                        <p style="font-family: 'Graffiti', sans-serif; font-size:374px">Z</p>
+                        <p style="font-family: 'Graffiti', sans-serif; font-size:158px;letter-spacing: 8px;">ited</p>
+                    </div>
+                    <div>
+                        <p style="position: relative;top: -11em;right: -7em;font-family:'Holiday';width: 21em;font-size: 55px;">La vie d'artiste</p>
+                    </div>
+                </div>
             </div>
             <a href="interview.html">
-                <div class="btn-start">
-                    <div class="arrow">
-                    </div>
-                    <span>Démarrer</span>
+                <div style="position: relative;top: -188px;left: 65em;display: flex;align-items: center;" >
+                        <button class="button">
+                            <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="26px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+                        </button>
+                        <span style="margin-left: 17px; font-size:33px; font-family: 'Atma', sans-serif;">Démarrer</span>
                 </div>
             </a>
         </section>
-
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerCheckbox = document.getElementById('burger');
+            const appContainer = document.querySelector('.app-container');
+            const homeContainer = document.querySelector('.home-container');
+            const iconsContainer = document.querySelector('.icons-container');
+            const positionmaison = document.querySelector('.position_maison');
+    
+            burgerCheckbox.addEventListener('change', function () {
+                if (burgerCheckbox.checked) {
+                    appContainer.classList.add('active');
+                    homeContainer.classList.add('active');
+                    iconsContainer.classList.add('active');
+                    positionmaison.classList.add('active');
 
+                } else {
+                    appContainer.classList.remove('active');
+                    homeContainer.classList.remove('active');
+                    iconsContainer.classList.remove('active');
+                    positionmaison.classList.remove('active');
+                }
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
