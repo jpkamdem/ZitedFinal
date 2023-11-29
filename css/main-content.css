@@ -5,6 +5,16 @@ section.main-content {
     background: linear-gradient(#4297db, #949dad, #816888, #504f7c);
     border-radius: 20px;
 }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 191px;
+    width: 147%;
+    height: 126%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    transform: rotate(109deg);
+}
 div.images-container {
     display: flex;
     height: 100%;
@@ -17,7 +27,7 @@ img[alt='zited'] {
 }
 
 img[alt='titleZit'] {
-    height: 35vh;
+    height: 49vh;
     padding: 16vh 8vw 0 0;
 }
 section.main-content div.btn-start {
@@ -39,3 +49,30 @@ section.main-content a {
     text-decoration: none;
     color: #fff;
 }
+.button {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: linear-gradient(30deg, rgb(255, 130, 0) 20%, rgb(249 186 23) 80%);
+    transition: all 0.3s ease-in-out 0s;
+    box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+    animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .button:is(:hover, :focus) {
+    transform: scale(1.2);
+  }
+  @font-face {
+    font-family: 'Graffiti';
+    src: url('/Graffiti.ttf') format('truetype');
+    /* Ajoute d'autres formats si nécessaire (e.g., woff, woff2) */
+    font-family: 'Holiday';
+    src: url('/HolidayFree.otf') format('truetype');
+    /* Ajoute d'autres formats si nécessaire (e.g., woff, woff2) */
+  }
