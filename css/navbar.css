@@ -1,100 +1,157 @@
+/* Styles pour la nav */
 nav {
-    margin: 1.1% 10px 0 .5%;
-    width: 7%;
-    min-width: 6em;
-    height: 95.6%;
-  }
+  margin: 1.1% 10px 0 .5%;
+  width: 7%;
+  min-width: 6em;
+  height: 95.6%;
+  position: relative;
+}
 
-  /* Bouton home */
-  div.home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 9%;
-    background: linear-gradient(#1b1b1b 100%, #100f0f);
-    border-radius: 20px;
-    margin: 0 0 2em 0;
-  }
-  div.home-container a img.icon {
-    height: 5em;
-  }
-
+/* Bouton home */
+.home-container {
+  height: 9%;
+  background: linear-gradient(#1b1b1b 100%, #100f0f);
+  border-radius: 20px;
+  margin: 0 0 2em 0;
+  position: relative;
+  overflow: hidden;
+  transition: width 3s;
+}
+.home-container.active {
+  width:300px;
+}
+.text_1_contenant{
+  display: none; /* Initialement caché */
+}
+.position_maison{
+  position: relative;
+  top: 4px;
+  transition: top ;
+}
+.position_maison.active{
+  top: -14px;
+}
+.home-container.active .text_1_contenant {
+  display: block; /* Affiche le contenu quand la classe "active" est présente */
+  margin-left: 58px;
+  font-family: 'Atma';
+  font-size: 27px;
+}
+div.home-container a img.icon {
+  height: 53px;
+  position: relative;
+  top: 2px;
+}
 /* AppContainer */
-div.app-container {
-    background: linear-gradient(#1b1b1b, #141414);
-    height: calc(100% - 9% - 2em);
-    border-radius: 20px;
-  }
-  div.icons-container {
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-  }
-  div.icons-container a img {
-    height: 3em;
-  }
+.app-container {
+  background: linear-gradient(#1b1b1b, #141414);
+  height: calc(100% - 9% - 2em);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: width 3s;
+}
+.app-container.active {
+  width:300px;
+}
+.text_2_contenant {
+  display: none; /* Initialement caché */
+}
 
-  div.burger {
-    height: 10%;
-    position: relative;
-    width: 40px;
-    height: 30px;
-    background: transparent;
-    cursor: pointer;
-    display: block;
-  }
-  
-  .burger input {
-    display: none;
-  }
-  
-  .burger span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: white;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: 0.25s ease-in-out;
-  }
-  
-  .burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
-  }
-  
-  .burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(45deg);
-    top: 0px;
-    left: 5px;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(2) {
-    width: 0%;
-    opacity: 0;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(3) {
-    transform: rotate(-45deg);
-    top: 28px;
-    left: 5px;
-  }
-  
+.app-container.active .text_2_contenant {
+  display: block; /* Affiche le contenu quand la classe "active" est présente */
+  margin-left: 58px;
+  font-family: 'Atma';
+  font-size: 27px;
+  margin-top: 8em;
+}
+.icons-container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  transition: flex-direction 3s, justify-content 3s, align-items 3s;
+
+}
+.icons-container.active{
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:flex-end;
+}
+.icons-container a img {
+  height: 47px;
+}
+
+.burger {
+  height: 10%;
+  position: relative;
+  left: 16px;
+  top: 11px;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+/* Translation de la div.icons-container */
+#burger:checked ~ .app-container,
+#burger:checked ~ .home-container::before,
+#burger:checked ~ .home-container::after {
+  width: 100px; /* Ajuste la largeur selon tes besoins */
+  transform: translateX(100px); /* Ajuste la translation selon tes besoins */
+}
+
   
